@@ -1,0 +1,90 @@
+# ---- Java / Maven ----
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven target directories (module-level)
+target/
+**/target/
+
+# Test build output
+test-classes/
+
+# Logs
+*.log
+.log/
+logs/
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Eclipse workspace (metadata files created by the IDE)
+.metadata/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Maven wrapper - keep wrapper jar if present (do not ignore .mvn dir entirely)
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (if present) - safe to ignore
+.gradle/
+build/
+
+# IDE workspace / local files
+.idea/
+*.iml
+
+# Ignore generated site and reports
+site/
+reports/
+
+# JVM crash logs
+hs_err_pid*.log
+
+# Maven Surefire / Failsafe reports
+surefire-reports/
+failsafe-reports/
+
+# Code coverage
+jacoco.exec
+coverage/
+
+# Module explicit targets (redundant with **/target/ but useful to make intent clear)
+/Beans/target/
+/demo/target/
+
+# Package manager lockfiles (optional)
+# package-lock.json
+# yarn.lock
