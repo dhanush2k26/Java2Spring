@@ -10,14 +10,19 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext("org.example");
-        Employee emp =  context.getBean(Employee.class);
-        Employee emp2 =  context.getBean(Employee.class);
-        emp.setId(101);
-        emp.setName("John Doe");
-        emp2.setId(102);
-        emp2.setName("varun");
-        System.out.println(emp.toString());
+        Employee emp1 = context.getBean(Employee.class);
+        emp1.setId(1);
+        emp1.setName("John Doe");
+        System.out.println(emp1.toString());
+        emp1.getSalary().show();
+        emp1.getSalary().showSalary();
+        Employee  emp2 = context.getBean(Employee.class);
+        emp2.setId(2);
+        emp2.setName("Jane Smith");
         System.out.println(emp2.toString());
+        emp2.getSalary().show();
+        emp1.getSalary().showSalary();
+
         ((AnnotationConfigApplicationContext)context).close();
     }
 }
