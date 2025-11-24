@@ -18,7 +18,7 @@ public class App {
         emp1.getSalary().showSalary();
         Employee  emp2 = context.getBean(Employee.class);
         emp2.setId(2);
-        emp2.setName("Jane Smith");
+        emp2.setName("Jane varun");
         System.out.println(emp2.toString());
         emp2.getSalary().show();
         emp1.getSalary().showSalary();
