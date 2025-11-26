@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
 	@Bean
+	
 	public List<Point> trianglePoints() {
 		List<Point> points = new ArrayList<>();
 		points.add(new Point(0, 0));
