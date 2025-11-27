@@ -6,7 +6,7 @@
     
     <display-name>demo3</display-name>
     
-<!--     <welcome-file-list>
+<!--  <welcome-file-list>
         <welcome-file>App.jsp</welcome-file>
     </welcome-file-list>
     
@@ -18,6 +18,6 @@
     <servlet-mapping>
         <servlet-name>SubmitBioData</servlet-name>
         <url-pattern>/SubmitBioData</url-pattern>
-    </servlet-mapping> -->
-    
+    </servlet-mapping>
+     -->
 </web-app>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Employee implementations with prototype scope -->
+    <bean id="regemployee" class="com.example.model.RegularEmployee"/>
+    <bean id="intemployee" class="com.example.model.InternEmployee" />
+    <bean id="partTimeEmployee" class="com.example.model.PartTimeEmployee"/>
+    <bean id="manager" class="com.example.model.Manager"/> 
+    
+    <!-- Factory beans -->
+    <bean id="regularEmployeeFactory" class="com.example.beanfactory.RegularEmployeeFactory"/>
+    <bean id="internEmployeeFactory" class="com.example.beanfactory.InternEmployeeFactory"/>
+    <bean id="partTimeEmployeeFactory" class="com.example.beanfactory.PartTimeEmployeeFactory"/>
+    <bean id="managerFactory" class="com.example.beanfactory.ManagerFactory"></bean>
+    
+    <!-- Service bean - Scanner will be set programmatically -->
+    <bean id="employeeService" class="com.example.service.EmployeeService"/>
+</beans>
