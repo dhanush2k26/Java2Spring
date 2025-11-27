@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import org.fusesource.jansi.AnsiConsole;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import com.example.AppConfig;
 import com.example.EMS.model.InternEmployee;
@@ -18,7 +17,6 @@ public class App
     {
        AnnotationConfigApplicationContext con=new AnnotationConfigApplicationContext(AppConfig.class);
        Scanner sc=new Scanner(System.in);
-       AnsiConsole.systemInstall();
        System.out.println("-----Employee Info Dashboard-----");
 
        List<RegularEmployee> regEmpList=new ArrayList<>();
